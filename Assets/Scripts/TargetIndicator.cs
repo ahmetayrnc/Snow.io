@@ -1,0 +1,153 @@
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
+public class TargetIndicator : MonoBehaviour
+{
+    private Camera mainCamera;
+    private RectTransform m_icon;
+    private Image m_iconImage;
+    private Canvas mainCanvas;
+    private Vector3 m_cameraOffsetUp;
+    private Vector3 m_cameraOffsetRight;
+    private Vector3 m_cameraOffsetForward;
+    
+    //[HideInInspector]
+    //[Space]
+    //[Range(0, 100)]
+    //public float m_edgeBuffer;
+    
+    [Space]
+    public bool PointTarget = true;
+    [HideInInspector]
+    public bool ShowDebugLines;
+    //Indicates if the object is out of the screen
+    private bool m_outOfScreen;
+
+
+    public GameObject icon;
+    
+    void Start()
+    {
+        mainCamera = Camera.main;
+        //mainCanvas = FindObjectOfType<Canvas>();
+        //Debug.Assert((mainCanvas != null), "There needs to be a Canvas object in the scene for the OTI to display");
+        InstainateTargetIcon();
+    }
+    
+    void Update()
+    {
+        if (ShowDebugLines)
+        {
+            DrawDebugLines();
+        }
+        UpdateTargetIconPosition();
+    }
+    
+    private void InstainateTargetIcon()
+    {
+        m_icon = icon.GetComponent<RectTransform>();
+        
+        //m_icon.transform.SetParent(mainCanvas.transform);
+        //m_icon.localScale = m_targetIconScale;
+        //m_icon.name = name + ": OTI icon";
+        //m_iconImage = m_icon.gameObject.AddComponent<Image>();
+        //m_iconImage.sprite = m_targetIconOnScreen;
+    }
+    
+    private void UpdateTargetIconPosition()
+    {
+        Vector3 newPos = transform.position;
+        newPos = mainCamera.WorldToViewportPoint(newPos);
+        
+        //Simple check if the target object is out of the screen or inside
+        if (newPos.x > 1 || newPos.y > 1 || newPos.x < 0 || newPos.y < 0)
+        {
+            m_outOfScreen = true;
+        }
+        else
+        {
+            m_outOfScreen = false;
+        }
+           
+        if (newPos.z < 0)
+        {
+            newPos.x = 1f - newPos.x;
+            newPos.y = 1f - newPos.y;
+            newPos.z = 0;
+            newPos = Vector3Maxamize(newPos);
+        }
+        
+        newPos = mainCamera.ViewportToScreenPoint(newPos);
+        //newPos.x = Mathf.Clamp(newPos.x, m_edgeBuffer, Screen.width - m_edgeBuffer);
+        //newPos.y = Mathf.Clamp(newPos.y, m_edgeBuffer, Screen.height - m_edgeBuffer);
+        
+        newPos.x = Mathf.Clamp(newPos.x, 1, Screen.width - 1);
+        newPos.y = Mathf.Clamp(newPos.y, 1, Screen.height - 1);
+        newPos.z = 0;
+        m_icon.transform.position = newPos;
+        
+        //Operations if the object is out of the screen
+        if (m_outOfScreen)
+        {
+            icon.SetActive(true);
+            
+            //Show the target off screen icon
+            //m_iconImage.sprite = m_targetIconOffScreen;
+            if (PointTarget)
+            {
+                //Vector3 vectorToTarget = transform.position - m_icon.transform.position;
+                //float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
+                //Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+                //m_icon.transform.rotation = q;
+
+
+                //Vector3 relativePos = transform.position - m_icon.transform.position;
+                //Quaternion rotation = Quaternion.LookRotation(relativePos);
+                //rotation.x = m_icon.transform.rotation.x;
+                //rotation.y = m_icon.transform.rotation.y;
+                //m_icon.transform.rotation = rotation;
+
+                //Rotate the sprite towards the target object
+                var targetPosLocal = mainCamera.transform.InverseTransformPoint(transform.position);
+                var targetAngle = -Mathf.Atan2(targetPosLocal.x, targetPosLocal.y) * Mathf.Rad2Deg - 90;
+                //Apply rotation
+                m_icon.transform.eulerAngles = new Vector3(0, 0, targetAngle + 90);
+            }
+             
+        }
+        else
+        {
+            icon.SetActive(false);
+            //Reset rotation to zero and swap the sprite to the "on screen" one
+            //m_icon.transform.eulerAngles = new Vector3(0, 0, 0);
+            //m_iconImage.sprite = m_targetIconOnScreen;
+        }
+         
+    }
+    
+    public void DrawDebugLines()
+    {
+        Vector3 directionFromCamera = transform.position - mainCamera.transform.position;
+        Vector3 cameraForwad = mainCamera.transform.forward;
+        Vector3 cameraRight = mainCamera.transform.right;
+        Vector3 cameraUp = mainCamera.transform.up;
+        cameraForwad *= Vector3.Dot(cameraForwad, directionFromCamera);
+        cameraRight *= Vector3.Dot(cameraRight, directionFromCamera);
+        cameraUp *= Vector3.Dot(cameraUp, directionFromCamera);
+        Debug.DrawRay(mainCamera.transform.position, directionFromCamera, Color.magenta);
+        Vector3 forwardPlaneCenter = mainCamera.transform.position + cameraForwad;
+        Debug.DrawLine(mainCamera.transform.position, forwardPlaneCenter, Color.blue);
+        Debug.DrawLine(forwardPlaneCenter, forwardPlaneCenter + cameraUp, Color.green);
+        Debug.DrawLine(forwardPlaneCenter, forwardPlaneCenter + cameraRight, Color.red);
+    }
+    public Vector3 Vector3Maxamize(Vector3 vector)
+    {
+        Vector3 returnVector = vector;
+        float max = 0;
+        max = vector.x > max ? vector.x : max;
+        max = vector.y > max ? vector.y : max;
+        max = vector.z > max ? vector.z : max;
+        returnVector /= max;
+        return returnVector;
+    }
+}

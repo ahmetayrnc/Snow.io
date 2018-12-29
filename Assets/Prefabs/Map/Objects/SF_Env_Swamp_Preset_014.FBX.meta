@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 1d66889e1a557e24899e791242d20dff
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SF_Env_Swamp_Preset_014_Elements1
+    100004: SF_Env_Swamp_Preset_014_Elements10
+    100006: SF_Env_Swamp_Preset_014_Elements11
+    100008: SF_Env_Swamp_Preset_014_Elements12
+    100010: SF_Env_Swamp_Preset_014_Elements13
+    100012: SF_Env_Swamp_Preset_014_Elements14
+    100014: SF_Env_Swamp_Preset_014_Elements15
+    100016: SF_Env_Swamp_Preset_014_Elements16
+    100018: SF_Env_Swamp_Preset_014_Elements17
+    100020: SF_Env_Swamp_Preset_014_Elements18
+    100022: SF_Env_Swamp_Preset_014_Elements19
+    100024: SF_Env_Swamp_Preset_014_Elements2
+    100026: SF_Env_Swamp_Preset_014_Elements20
+    100028: SF_Env_Swamp_Preset_014_Elements21
+    100030: SF_Env_Swamp_Preset_014_Elements3
+    100032: SF_Env_Swamp_Preset_014_Elements4
+    100034: SF_Env_Swamp_Preset_014_Elements5
+    100036: SF_Env_Swamp_Preset_014_Elements6
+    100038: SF_Env_Swamp_Preset_014_Elements7
+    100040: SF_Env_Swamp_Preset_014_Elements8
+    100042: SF_Env_Swamp_Preset_014_Elements9
+    400000: //RootNode
+    400002: SF_Env_Swamp_Preset_014_Elements1
+    400004: SF_Env_Swamp_Preset_014_Elements10
+    400006: SF_Env_Swamp_Preset_014_Elements11
+    400008: SF_Env_Swamp_Preset_014_Elements12
+    400010: SF_Env_Swamp_Preset_014_Elements13
+    400012: SF_Env_Swamp_Preset_014_Elements14
+    400014: SF_Env_Swamp_Preset_014_Elements15
+    400016: SF_Env_Swamp_Preset_014_Elements16
+    400018: SF_Env_Swamp_Preset_014_Elements17
+    400020: SF_Env_Swamp_Preset_014_Elements18
+    400022: SF_Env_Swamp_Preset_014_Elements19
+    400024: SF_Env_Swamp_Preset_014_Elements2
+    400026: SF_Env_Swamp_Preset_014_Elements20
+    400028: SF_Env_Swamp_Preset_014_Elements21
+    400030: SF_Env_Swamp_Preset_014_Elements3
+    400032: SF_Env_Swamp_Preset_014_Elements4
+    400034: SF_Env_Swamp_Preset_014_Elements5
+    400036: SF_Env_Swamp_Preset_014_Elements6
+    400038: SF_Env_Swamp_Preset_014_Elements7
+    400040: SF_Env_Swamp_Preset_014_Elements8
+    400042: SF_Env_Swamp_Preset_014_Elements9
+    2100000: lambert1
+    2300000: SF_Env_Swamp_Preset_014_Elements1
+    2300002: SF_Env_Swamp_Preset_014_Elements10
+    2300004: SF_Env_Swamp_Preset_014_Elements11
+    2300006: SF_Env_Swamp_Preset_014_Elements12
+    2300008: SF_Env_Swamp_Preset_014_Elements13
+    2300010: SF_Env_Swamp_Preset_014_Elements14
+    2300012: SF_Env_Swamp_Preset_014_Elements15
+    2300014: SF_Env_Swamp_Preset_014_Elements16
+    2300016: SF_Env_Swamp_Preset_014_Elements17
+    2300018: SF_Env_Swamp_Preset_014_Elements18
+    2300020: SF_Env_Swamp_Preset_014_Elements19
+    2300022: SF_Env_Swamp_Preset_014_Elements2
+    2300024: SF_Env_Swamp_Preset_014_Elements20
+    2300026: SF_Env_Swamp_Preset_014_Elements21
+    2300028: SF_Env_Swamp_Preset_014_Elements3
+    2300030: SF_Env_Swamp_Preset_014_Elements4
+    2300032: SF_Env_Swamp_Preset_014_Elements5
+    2300034: SF_Env_Swamp_Preset_014_Elements6
+    2300036: SF_Env_Swamp_Preset_014_Elements7
+    2300038: SF_Env_Swamp_Preset_014_Elements8
+    2300040: SF_Env_Swamp_Preset_014_Elements9
+    3300000: SF_Env_Swamp_Preset_014_Elements1
+    3300002: SF_Env_Swamp_Preset_014_Elements10
+    3300004: SF_Env_Swamp_Preset_014_Elements11
+    3300006: SF_Env_Swamp_Preset_014_Elements12
+    3300008: SF_Env_Swamp_Preset_014_Elements13
+    3300010: SF_Env_Swamp_Preset_014_Elements14
+    3300012: SF_Env_Swamp_Preset_014_Elements15
+    3300014: SF_Env_Swamp_Preset_014_Elements16
+    3300016: SF_Env_Swamp_Preset_014_Elements17
+    3300018: SF_Env_Swamp_Preset_014_Elements18
+    3300020: SF_Env_Swamp_Preset_014_Elements19
+    3300022: SF_Env_Swamp_Preset_014_Elements2
+    3300024: SF_Env_Swamp_Preset_014_Elements20
+    3300026: SF_Env_Swamp_Preset_014_Elements21
+    3300028: SF_Env_Swamp_Preset_014_Elements3
+    3300030: SF_Env_Swamp_Preset_014_Elements4
+    3300032: SF_Env_Swamp_Preset_014_Elements5
+    3300034: SF_Env_Swamp_Preset_014_Elements6
+    3300036: SF_Env_Swamp_Preset_014_Elements7
+    3300038: SF_Env_Swamp_Preset_014_Elements8
+    3300040: SF_Env_Swamp_Preset_014_Elements9
+    4300000: SF_Env_Swamp_Preset_014_Elements21
+    4300002: SF_Env_Swamp_Preset_014_Elements20
+    4300004: SF_Env_Swamp_Preset_014_Elements19
+    4300006: SF_Env_Swamp_Preset_014_Elements18
+    4300008: SF_Env_Swamp_Preset_014_Elements17
+    4300010: SF_Env_Swamp_Preset_014_Elements16
+    4300012: SF_Env_Swamp_Preset_014_Elements15
+    4300014: SF_Env_Swamp_Preset_014_Elements14
+    4300016: SF_Env_Swamp_Preset_014_Elements13
+    4300018: SF_Env_Swamp_Preset_014_Elements12
+    4300020: SF_Env_Swamp_Preset_014_Elements11
+    4300022: SF_Env_Swamp_Preset_014_Elements10
+    4300024: SF_Env_Swamp_Preset_014_Elements9
+    4300026: SF_Env_Swamp_Preset_014_Elements8
+    4300028: SF_Env_Swamp_Preset_014_Elements7
+    4300030: SF_Env_Swamp_Preset_014_Elements6
+    4300032: SF_Env_Swamp_Preset_014_Elements5
+    4300034: SF_Env_Swamp_Preset_014_Elements4
+    4300036: SF_Env_Swamp_Preset_014_Elements3
+    4300038: SF_Env_Swamp_Preset_014_Elements2
+    4300040: SF_Env_Swamp_Preset_014_Elements1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d726a65f2eaae8847857d20bb327828e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
