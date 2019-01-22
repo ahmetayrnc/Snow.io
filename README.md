@@ -13,9 +13,9 @@ In Snow.io the main goal is to get bigger as possible in 2 minutes. You control 
 - It uses tweening to make everything smoother.
 
 ## Links
-Play Store Link:
+Play Store Link: Due to technical difficulties with my computer, the game is not currently on any stores.
 
-Trailer for the game:
+Trailer for the game: https://youtu.be/ofZuFV0K4ko
 
 ## Gallery
 <p align="middle">
